@@ -1,0 +1,36 @@
+{
+  "$schema": "https://aka.ms/dotnet-monitor-schema",
+  // "GlobalCounter": {
+  //   "IntervalSeconds": 5
+  // },
+  // "DefaultProcess": {
+  //   "Filters": [{
+  //     "Key": "ProcessName",
+  //     "Value": "client"
+  //   }]
+  // },
+  "Metrics": {
+    // "MetricCount": 3,
+    "IncludeDefaultProviders": true,
+    "Providers": [
+      {
+        "ProviderName": "System.Runtime"
+      },
+      {
+        "ProviderName": "Microsoft.AspNetCore.Hosting"
+      },
+      {
+        "ProviderName": "Microsoft.AspNetCore.Http.Connections"
+      },
+      {
+        "ProviderName": "Microsoft-AspNetCore-Server-Kestrel"
+      },
+      {
+        "ProviderName": "System.Net.Http"
+      },
+      {
+        "ProviderName": "System.Net.Sockets"
+      }
+    ]
+  }
+}
